@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Error Pages
+ErrorDocument 401 /not-found.html
+ErrorDocument 403 /not-found.html
+ErrorDocument 404 /not-found.html
+ErrorDocument 500 /not-found.html
+
+# Prevent directory browsing
+Options -Indexes +FollowSymLinks -MultiViews
+
+# Canonical host
+RewriteCond %{HTTP_HOST}    ^www\.(.*)      [NC]
+RewriteRule ^(.*)$          http://%1/$1    [L,R,NE]
+
+#Needed
+RewriteRule ^sitemap.xml$ sitemap.xml
+
+# Rewrite Rules
+RewriteRule ^([0-9]+)/([A-Za-z0-9-]+)/$ 	/index.php?storeId=$1&storeUrl=$2
