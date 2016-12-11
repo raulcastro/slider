@@ -49,32 +49,33 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title><?php echo $title; ?></title>
 
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/favicon/manifest.json">
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/favicon/favicon.ico">
+		<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
 		<!-- Bootstrap -->
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
-					
 		<!-- Font Awesome CSS -->
 		<link href="/css/font-awesome/font-awesome.min.css" rel="stylesheet">
-		
 		<!-- Simple Line Icons -->
 		<link href="/css/simple-line-icons/simple-line-icons.css" rel="stylesheet">
-		
 		<!-- google font -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-		
 		<!-- owl-carousel -->
 		<link href="/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
 		<link href="/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
-		
 		<!-- magnific-popup -->
 		<link href="/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		
 		<!-- animate -->
 		<link href="/css/animate/animate.css" rel="stylesheet">
-		
 		<!-- style -->
 		<link href="/css/style.css" rel="stylesheet">
-		
-		
 		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -192,7 +193,7 @@
 						echo '"'.$data['appInfo']['url']."images/default/default_slider.jpg".'"';
 					}
 					?>
-				  ], {duration: 4000, fade: 1000});
+				  ], {duration: 10000, fade: 1000});
 			}		
 		});
 		</script>
