@@ -193,7 +193,7 @@
 						echo '"'.$data['appInfo']['url']."images/default/default_slider.jpg".'"';
 					}
 					?>
-				  ], {duration: 10000, fade: 1000});
+				  ], {duration: 7000, fade: 1000});
 			}		
 		});
 		</script>
